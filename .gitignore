@@ -1,0 +1,48 @@
+.vscode/
+*.iml
+.gradle
+.idea/.name
+.idea/deviceManager.xml
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+.kotlin/
+
+# dump heap
+*.hprof
+
+# artifacts
+*.apk
+*.aab
+output.json
+
+# secrets
+*.jks
+*.keystore
+keystore.properties
+
+# tools
+__pycache__/
+reports/
+*.ipynb
+.ipynb_checkpoints
+reports/
+public/
+
+# data
+app/src/main/assets/datasets/
+app/src/main/assets/knowledge/
+app/src/main/assets/*.qap
+app/src/main/assets/*.json

@@ -1,0 +1,171 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">QuizApp</string>
+    <!--    Tab-->
+    <string name="tab_home">Main</string>
+    <string name="tab_quizzes">Quizzes</string>
+    <string name="tab_knowledge">Knowledge</string>
+    <string name="tab_progress">Progress</string>
+    <string name="tab_saved">Saved</string>
+    <string name="tab_settings">Settings</string>
+    <string name="saved_placeholder">Coming soon: bookmarked articles and saved questions</string>
+    <string name="knowledge_placeholder">Coming soon: articles and materials</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_switch_player">Switch Player</string>
+    <!--    Player-->
+    <string name="player_empty">There are no players yet. Create the first one!</string>
+    <string name="player_create">Create</string>
+    <string name="player_new_name">New Name</string>
+    <string name="player_select_title">Select Player</string>
+    <string name="player_or_existing">Or select existing:</string>
+    <string name="player_profile_button">Profile</string>
+    <string name="player_home_greeting">Hello, %1$s</string>
+    <string name="player_home_domain_title">Domain</string>
+    <string name="player_home_play">Play</string>
+    <string name="player_home_profile">My Profile</string>
+    <string name="domain_all">All Domains</string>
+    <!--    Profile-->
+    <string name="profile_summary_title">Statistics</string>
+    <string name="profile_total_answers">Total Answers</string>
+    <string name="profile_correct_answers">Correct</string>
+    <string name="profile_accuracy">Accuracy</string>
+    <string name="profile_hints_used">Hints used</string>
+    <string name="profile_domain_ratio">%1$d / %2$d  (%3$d%%)</string>
+    <string name="profile_by_domain">By Domain</string>
+    <string name="profile_back">Back</string>
+    <string name="profile_fallback_title">Profile</string>
+    <!--    Quiz-->
+    <string name="quiz_hint_button">Hint (left: %1$d)</string>
+    <string name="quiz_next">Next</string>
+    <string name="quiz_why_button">Why?</string>
+    <string name="quiz_why_ok_button">OK</string>
+    <string name="quiz_article_button">Article</string>
+    <string name="quiz_finished_score">Done! Score: %1$d / %2$d</string>
+    <string name="quiz_play_again">Play again</string>
+    <string name="quiz_return_home">Back home</string>
+    <string name="quiz_exit">Exit</string>
+    <string name="quiz_exit_dialog_title">Exit quiz?</string>
+    <string name="quiz_exit_dialog_message">Are you sure you want to exit? Your progress in this quiz session will be lost.</string>
+    <string name="quiz_exit_confirm">Exit</string>
+    <string name="quiz_no_hints">No hints available</string>
+    <string name="quiz_hints_placeholder">Article preview / hints will appear here</string>
+    <string name="quiz_check" translatable="false">Check</string>
+    <!--    Domain-->
+    <string name="domain_select_all">All</string>
+    <string name="domain_clear_all">None</string>
+    <string name="error_no_questions_for_domains">There are no questions in the selected domains.</string>
+    <!--    Errors-->
+    <string name="error_generic">Error: %1$s</string>
+    <string name="error_questions_load_failed">Failed to load questions</string>
+    <string name="error_profile_load_failed">Failed to load profile</string>
+    <string name="error_player_name_empty">The name cannot be empty.</string>
+    <string name="error_player_name_duplicate">A player with that name already exists</string>
+    <string name="error_knowledge_load_failed">Failed to load the knowledge base</string>
+    <string name="error_article_not_found">Article not found</string>
+    <string name="error_article_load_failed">Failed to load the article</string>
+    <string name="language_unavailable_title">Content not available</string>
+    <string name="language_unavailable_message">This content is not yet available in %1$s. It is being translated; please try another language.</string>
+    <string name="action_ok">OK</string>
+
+    <string name="knowledge_empty">No Articles yet</string>
+    <string name="knowledge_article_count">%1$d articles</string>
+    <string name="cd_expand_group">Expand %1$s</string>
+    <string name="cd_collapse_group">Collapse %1$s</string>
+    <string name="catalog_placeholder">Coming soon: different quiz modes</string>
+    <string name="profile_empty">No answers yet. Play the first quiz!</string>
+    <string name="swap_positions">Swap positions</string>
+    <string name="create_player_name_title">What is your name?</string>
+    <string name="create_player_languages_title">Select languages</string>
+    <string name="action_done">Done</string>
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_continue" translatable="false">Continue</string>
+    <string name="create_player_languages_hint">One language is already included. You can add others—they will appear in the switcher.</string>
+    <string name="action_next">Next</string>
+
+    <string name="settings_ui_language_title">Interface language</string>
+    <string name="create_player_ui_language_title">Interface language</string>
+    <string name="create_player_ui_language_hint">Choose the language for the app menus and buttons. You can change this later in Settings.</string>
+    <string name="system_language_option">System (%1$s)</string>
+    <string name="system_language_default">System</string>
+
+    <string name="settings_language_title">Content language</string>
+    <string name="settings_language_hint">The language currently used for questions, articles, and domain names.</string>
+    <string name="settings_my_languages_title">My languages</string>
+    <string name="settings_my_languages_hint">Pick the languages you want to see in the switcher. English is always enabled.</string>
+    <string name="settings_language_importing">loading…</string>
+    <string name="settings_domains_title">Domains</string>
+    <string name="settings_domains_hint">Pick the domains you want to see on Home. If none are selected, all domains are shown.</string>
+    <string name="settings_domains_count">Selected: %1$d</string>
+    <string name="settings_domains_none">Not configured</string>
+    <string name="settings_haptic_title">Haptic feedback</string>
+    <string name="settings_haptic_subtitle">Vibrate when you tap buttons</string>
+
+    <string name="player_home_no_domains_title">Pick your domains</string>
+    <string name="player_home_no_domains_hint">Select the topics you care about. They will show up here, ready to play.</string>
+    <string name="player_home_select_domains">Configure domains</string>
+    <string name="player_home_select_at_least_one">Select at least one</string>
+    <string name="settings_language_primary_title">Primary language</string>
+    <string name="settings_language_primary_hint">Questions, articles, and domain names are shown in it by default. We return here when you switch players.</string>
+    <string name="settings_language_content_title">Languages for switching</string>
+    <string name="settings_language_content_hint">Additional languages you can quickly switch between while playing or reading.</string>
+    <string name="settings_language_no_extras">No extra languages — pick at least a primary one.</string>
+    <string name="settings_language_unavailable">unavailable</string>
+    <string name="settings_language_download">Download</string>
+    <string name="settings_language_install" translatable="false">Install</string>
+    <string name="settings_language_installing" translatable="false">Installing…</string>
+
+    <string name="create_player_language_title">Primary language</string>
+    <string name="create_player_language_hint">Questions, articles, and domain names will be shown in it. You can add more later.</string>
+    <string name="create_player_domains_title">What interests you?</string>
+    <string name="create_player_domains_hint">Pick the domains to show on Home. All are selected by default — uncheck what you don\'t need.</string>
+    <string name="player_home_quick_quiz">Quick quiz</string>
+    <string name="quick_quiz_dialog_title">Quick Quiz</string>
+    <string name="quick_quiz_difficulty_title">Difficulty</string>
+    <string name="quick_quiz_difficulty_any">Any</string>
+    <string name="quick_quiz_difficulty_easy">Easy</string>
+    <string name="quick_quiz_difficulty_medium">Medium</string>
+    <string name="quick_quiz_difficulty_hard">Hard</string>
+    <string name="quick_quiz_count_title">Question count</string>
+    <string name="quick_quiz_count_all">All</string>
+    <string name="quick_quiz_start">Start</string>
+    <string name="article_nav_prev">Prev</string>
+    <string name="article_nav_next">Next</string>
+    <string name="back_to_quiz">Back to quiz</string>
+    <string name="back_to_article" translatable="false">Back to Article</string>
+    <string name="search_articles" translatable="false">Search articles</string>
+    <string name="settings_language_add">Add language</string>
+    <string name="settings_language_add_title">Add content language</string>
+    <string name="settings_language_remove">Remove</string>
+    <string name="settings_language_search">Search…</string>
+    <string name="settings_language_no_matches">No matches</string>
+    <string name="cd_language_switcher" translatable="false">Change language</string>
+    <string name="cd_hints_available" translatable="false">%1$d hints available</string>
+    <string name="cd_select_token" translatable="false">Select token %1$s</string>
+    <string name="cd_deselect_token" translatable="false">Remove token %1$s</string>
+    <string name="feedback_button_cd">Report an issue</string>
+    <string name="feedback_dialog_title">Report an issue</string>
+    <string name="feedback_reason_label">What went wrong?</string>
+    <string name="feedback_comment_label">Additional details (optional)</string>
+    <string name="feedback_submit">Submit</string>
+    <string name="feedback_success">Thank you! Feedback saved.</string>
+    <string name="feedback_reason_wrong">Wrong answer</string>
+    <string name="feedback_reason_typo">Typo / Grammar</string>
+    <string name="feedback_reason_translation">Bad translation</string>
+    <string name="feedback_reason_hint">Unclear hint</string>
+    <string name="feedback_reason_other">Other</string>
+    <string name="construct_all_tokens_selected">All tokens selected. Tap Check to verify.</string>
+    <string name="quiz_continue_button">Continue quiz</string>
+    <string name="quiz_check_knowledge_button">Check knowledge</string>
+    <string name="action_all">All</string>
+    <string name="action_none">None</string>
+    <string name="pack_uninstall">Uninstall Pack</string>
+    <string name="pack_installed">Installed</string>
+    <string name="action_install">Install</string>
+    <string name="action_update">Update</string>
+    <string name="settings_developer_title">Developer</string>
+    <string name="developer_this_device">This device</string>
+    <string name="developer_incoming">Incoming (last 20)</string>
+    <string name="action_copy">Copy</string>
+    <string name="developer_ping">Ping server</string>
+    <string name="developer_refresh_catalog">Refresh catalog</string>
+</resources>

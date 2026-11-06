@@ -1,0 +1,43 @@
+name: android
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-26.04-android
+    timeout-minutes: 60
+    container:
+      image: know-android-runner:latest
+      volumes:
+        - know-ci-gradle-cache:/root/.gradle
+        - know-ci-android-sdk:/opt/android-sdk
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Environment
+        run: |
+          java -version
+          sdkmanager --version
+
+      - name: Grant execute permission
+        run: chmod +x gradlew
+
+      - name: Assemble Debug
+        timeout-minutes: 25
+        env:
+          ANDROID_SDK_ROOT: /opt/android-sdk
+          ANDROID_HOME: /opt/android-sdk
+          GRADLE_USER_HOME: /root/.gradle
+          GRADLE_OPTS: "-Xmx4g"
+        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
+
+      - name: Upload APK
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-debug-${{ github.sha }}
+          path: app/build/outputs/apk/debug/*.apk
+          retention-days: 7
+          if-no-files-found: warn

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      QuizApp talks to a locally-running admin panel over plain HTTP on the
+      LAN (pack catalog + .qap download, plus the TCP ping protocol on 42069).
+      That server has no TLS and never will — it is a dev tool on the same
+      network as the device.
+
+      We could scope this to a fixed set of <domain> entries, but the host is
+      whatever the user types into Settings → Developer → "Pack server URL",
+      so the practical choice is a global cleartext permit.
+
+      The rest of the app talks to no network endpoints, so this is not
+      widening exposure in any meaningful way. If a public endpoint is ever
+      added, revisit: it must be HTTPS regardless of this config.
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
